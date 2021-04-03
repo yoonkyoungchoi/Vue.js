@@ -1,10 +1,10 @@
 var app = new Vue({
-    el: '#app',
-    data: {
-      todo: [
-        { text: 'JavaScript 배우기' },
-        { text: 'Vue 배우기' },
-        { text: '무언가 멋진 것을 만들기' }
-      ]
+    el : '#app',
+    data : {
+        todos: [
+            { text : 'JS를 배워보자!'},
+            { text : '나만의 홈페이지를 만들자!'},
+            { text : '알라뷰유융~'}
+        ]
     }
-  })
+})
