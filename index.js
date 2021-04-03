@@ -1,15 +1,11 @@
 var app = new Vue({
     el: '#app',
     data: {
-      message: '안녕하세요 Vue!'
-    }
-});
-
-var app2 = new Vue({
-    el: '#app-2',
-    data: {
-      message: '이 페이지는 ' + new Date() + ' 에 로드 되었습니다'
+      todos: [
+        { text: 'JavaScript 배우기' },
+        { text: 'Vue 배우기' },
+        { text: '나만의 포트폴리오 사이트 만들기' }
+      ]
     }
   });
-
-app.message = "I have a Data!";
+app.todos.push({ text : 'New Item'});

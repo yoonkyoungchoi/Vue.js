@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-        <body>
-        <div id="app">
-            {{ message }}
-        <div id="app-2">
-            <span v-bind:title="message">
-              내 위에 잠시 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다!
-            </span>
-        </div>
-        <script src="index.js"></script>
+    <body>
+    <script src="index.js"></script>
+    <div id="app">
+        <ol>
+          <li v-for="todo in todos">
+            {{ todo.text }}
+          </li>
+        </ol>
+      </div>
     </body>
 </html>
